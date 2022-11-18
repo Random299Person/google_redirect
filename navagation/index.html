@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Title of the Document</title>
+  </head>
+  <body>
+    <input type="text" placeholder="Type " id="inputId">
+    <button type="button" onclick="getInputValue();">https</button>
+    <button type="button" onclick="getInputValue2();">http</button>
+    <button type="button" onclick="getInputValue3();">google</button>
+    <script>
+      function getInputValue() {
+        // Selecting the input element and get its value 
+        let inputVal = document.getElementById("inputId").value;
+        // Displaying the value
+        window.location.href = "https://" + inputVal;
+      }
+      function getInputValue2() {
+        // Selecting the input element and get its value 
+        let inputVal = document.getElementById("inputId").value;
+        // Displaying the value
+        window.location.href = "http://" + inputVal";
+      }
+      function getInputValue3() {
+        // Selecting the input element and get its value 
+        let inputVal = document.getElementById("inputId").value;
+        // Displaying the value
+        window.location.href = "https://www.google.com";
+      }
+    </script>
+  </body>
+</html>
